@@ -1,0 +1,74 @@
+{
+  "_doc": "Commands run inside the sandbox right after every sandbox/setup.py call (after swegemma's wheel injection), by harness/common/envfix.py. 'repos' keys are repo short names ('*' = every repo); 'tasks' keys are instance ids. Override wheels live in /opt/gemma4/wheels (baked into the image). Rationale per entry: docs/grader.md.",
+  "repos": {
+    "*": {
+      "reason": "1) unshadow: injected wheel copies of the repo's own package shadow the workspace for src-layout repos (requests, httpx). 2) resolve: swegemma injects the newest version of every wheel; swap in the highest /wheels version satisfying the snapshot's own Requires-Dist + requirements*.txt (e.g. fastapi needs starlette<0.49, not 1.6.0).",
+      "commands": [
+        "python3 -S /opt/gemma4/bin/unshadow_workspace.py",
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py"
+      ]
+    },
+    "requests": {
+      "reason": "httpbin under Werkzeug 3.x normalizes malformed redirect Locations differently (test_redirecting_to_bad_url[http://localhost:-1-InvalidURL] DID NOT RAISE). /wheels ships werkzeug 2.3.8 + flask 2.3.3 (inferred: for exactly this); pin them. Verified on requests_6589/6592/6629.",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --pin werkzeug==2.3.8 --pin flask==2.3.3"
+      ]
+    }
+  },
+  "tasks": {
+    "rich_3064": {
+      "reason": "Expected output needs Pygments 2.15.1 (snapshot poetry.lock); /wheels newest is 2.21.0. Verified locally (gold fails without).",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --wheels-dir /opt/gemma4/wheels --pin Pygments==2.15.1"
+      ]
+    },
+    "rich_3130": {
+      "reason": "Expected output needs Pygments 2.15.1 (snapshot poetry.lock); /wheels newest is 2.21.0. Verified locally (gold fails without).",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --wheels-dir /opt/gemma4/wheels --pin Pygments==2.15.1"
+      ]
+    },
+    "rich_3296": {
+      "reason": "Expected output needs Pygments 2.16.1 (snapshot poetry.lock); /wheels newest is 2.21.0. From community dependency_repairs.csv (dmitriigluzdov); not yet verified here.",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --wheels-dir /opt/gemma4/wheels --pin Pygments==2.16.1"
+      ]
+    },
+    "rich_3469": {
+      "reason": "Expected output needs Pygments 2.17.2 (snapshot poetry.lock); /wheels newest is 2.21.0. From community dependency_repairs.csv (dmitriigluzdov); not yet verified here.",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --wheels-dir /opt/gemma4/wheels --pin Pygments==2.17.2"
+      ]
+    },
+    "rich_3782": {
+      "reason": "Expected output needs Pygments 2.19.1 (snapshot poetry.lock); /wheels newest is 2.21.0. From community dependency_repairs.csv (dmitriigluzdov); not yet verified here.",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --wheels-dir /opt/gemma4/wheels --pin Pygments==2.19.1"
+      ]
+    },
+    "rich_4070": {
+      "reason": "Expected output needs Pygments 2.19.2 (snapshot poetry.lock); /wheels newest is 2.21.0. From community dependency_repairs.csv (dmitriigluzdov); not yet verified here.",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --wheels-dir /opt/gemma4/wheels --pin Pygments==2.19.2"
+      ]
+    },
+    "rich_4079": {
+      "reason": "Expected output needs Pygments 2.19.2 (snapshot poetry.lock); /wheels newest is 2.21.0. From community dependency_repairs.csv (dmitriigluzdov); not yet verified here.",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --wheels-dir /opt/gemma4/wheels --pin Pygments==2.19.2"
+      ]
+    },
+    "fastapi_14962": {
+      "reason": "Tests need fastapi optional JSON-response deps ujson/orjson (not in /wheels). From community dependency_repairs.csv; not yet verified here.",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --wheels-dir /opt/gemma4/wheels --pin ujson==5.11.0 --pin orjson==3.11.3"
+      ]
+    },
+    "fastapi_14964": {
+      "reason": "As fastapi_14962.",
+      "commands": [
+        "python3 /opt/gemma4/bin/resolve_from_wheels.py --wheels-dir /opt/gemma4/wheels --pin ujson==5.11.0 --pin orjson==3.11.3"
+      ]
+    }
+  }
+}

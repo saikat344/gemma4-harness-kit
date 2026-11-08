@@ -1,0 +1,6 @@
+{
+  "provenance": "source: ab1 baseline-v0 passes A and B (Modal A100, 2026-11-02; 74 task-runs); aggregated by the authors from the ab1 logs, script not released. Thinking share is the reasoning-character fraction of each call's output, token-weighted.",
+  "task_runs": 74,
+  "llm_share_of_agent_time": 0.99,
+  "thinking_pct_of_output_tokens": 70.2
+}

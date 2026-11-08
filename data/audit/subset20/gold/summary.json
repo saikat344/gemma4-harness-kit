@@ -1,0 +1,43 @@
+{
+  "mode": "gold",
+  "image": "swebench-sandbox:latest",
+  "image_arch": "amd64",
+  "network": "none",
+  "tasks_path": "tasks.jsonl",
+  "predictions": null,
+  "env_fixes": true,
+  "skipped_missing_snapshot": 109,
+  "wall_seconds": 202.1,
+  "workers": 3,
+  "total": 20,
+  "resolved": 16,
+  "resolution_rate": 0.8,
+  "by_repo": {
+    "fastapi": {
+      "total": 6,
+      "resolved": 6
+    },
+    "httpx": {
+      "total": 1,
+      "resolved": 1
+    },
+    "requests": {
+      "total": 5,
+      "resolved": 1
+    },
+    "rich": {
+      "total": 8,
+      "resolved": 8
+    }
+  },
+  "error_classes": {
+    "none": 16,
+    "tests_failed": 4
+  },
+  "failed_ids": [
+    "requests_6589",
+    "requests_6592",
+    "requests_6629",
+    "requests_6757"
+  ]
+}

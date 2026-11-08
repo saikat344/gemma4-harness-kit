@@ -1,0 +1,16 @@
+{
+  "host": "Docker on WSL2, native x86_64",
+  "source": "{r2}/shipped-env/subset20-repaired-nofixes",
+  "refreshed_at_commit": "e2efac2",
+  "harness_rev": "bae126fb4c1c3471bdbf65c1a3b890611aa16ca4",
+  "harness_dirty": false,
+  "image_id": "sha256:cb910bcefe561e70cbe756362d71508a12d6cf8e84f8b94269eca60b2c0404ad",
+  "date": "2026-11-03",
+  "repairs": "off",
+  "network": "none",
+  "image": "swebench-sandbox:latest",
+  "image_arch": "amd64",
+  "workers": 2,
+  "result": "RESOLVED 5/20 mode=gold",
+  "sanitized": "grades: verdict fields only (no logs); summary: paths reduced to file names"
+}

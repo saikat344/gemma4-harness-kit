@@ -1,0 +1,179 @@
+{
+  "provenance": "source: <repo>/runs/ab1/{baseline-v0-A,baseline-v0-B,v1-A,v1-B} (run.json, grades.jsonl, tasks/*/result.json, llm_calls.jsonl, compactions.jsonl); host the home PC (WSL Ubuntu-24.04 on the home PC); runs made with runner git bf67d4fd91e2 (Modal A100 endpoint, 2026-11-02); built 2026-11-04T23:54:53-08:00",
+  "passes": {
+    "baseline-v0-A": {
+      "n": 37,
+      "resolved": 11,
+      "grades_file": "runs/ab1/baseline-v0-A/grades.jsonl",
+      "grades_conditions": {
+        "run_env_fixes": true,
+        "grader": "harness.grader --predictions (repo fixes on by default)",
+        "rows_with_env_fixes_field": 37,
+        "image_id": "sha256:cb910bcefe56"
+      },
+      "mean_agent_min_per_task": 4.39,
+      "time_cap_endings": 24,
+      "context_window_exceeded_deaths": 3,
+      "context_window_exceeded_in_llm_call_errors": 3,
+      "write_file_errors": {
+        "total": 0,
+        "tmp_paths": 0
+      },
+      "empty_patches": 8,
+      "compactions": {
+        "total": 32,
+        "task_runs_with_ge1": 26
+      },
+      "budgets": {
+        "timeout_seconds": 120,
+        "verification_timeout_seconds": 300,
+        "max_tool_calls": 50,
+        "max_time_minutes": 5.0,
+        "max_turns": 80,
+        "source": "eval_config.yaml",
+        "overrides": {}
+      }
+    },
+    "baseline-v0-B": {
+      "n": 37,
+      "resolved": 13,
+      "grades_file": "runs/ab1/baseline-v0-B/grades.jsonl",
+      "grades_conditions": {
+        "run_env_fixes": true,
+        "grader": "harness.grader --predictions (repo fixes on by default)",
+        "rows_with_env_fixes_field": 37,
+        "image_id": "sha256:cb910bcefe56"
+      },
+      "mean_agent_min_per_task": 4.2,
+      "time_cap_endings": 21,
+      "context_window_exceeded_deaths": 2,
+      "context_window_exceeded_in_llm_call_errors": 2,
+      "write_file_errors": {
+        "total": 0,
+        "tmp_paths": 0
+      },
+      "empty_patches": 4,
+      "compactions": {
+        "total": 30,
+        "task_runs_with_ge1": 25
+      },
+      "budgets": {
+        "timeout_seconds": 120,
+        "verification_timeout_seconds": 300,
+        "max_tool_calls": 50,
+        "max_time_minutes": 5.0,
+        "max_turns": 80,
+        "source": "eval_config.yaml",
+        "overrides": {}
+      }
+    },
+    "v1-A": {
+      "n": 37,
+      "resolved": 9,
+      "grades_file": "runs/ab1/v1-A/grades.jsonl",
+      "grades_conditions": {
+        "run_env_fixes": true,
+        "grader": "harness.grader --predictions (repo fixes on by default)",
+        "rows_with_env_fixes_field": 37,
+        "image_id": "sha256:cb910bcefe56"
+      },
+      "mean_agent_min_per_task": 4.43,
+      "time_cap_endings": 28,
+      "context_window_exceeded_deaths": 0,
+      "context_window_exceeded_in_llm_call_errors": 0,
+      "write_file_errors": {
+        "total": 26,
+        "tmp_paths": 26
+      },
+      "empty_patches": 11,
+      "compactions": {
+        "total": 30,
+        "task_runs_with_ge1": 26
+      },
+      "budgets": {
+        "timeout_seconds": 120,
+        "verification_timeout_seconds": 300,
+        "max_tool_calls": 50,
+        "max_time_minutes": 5.0,
+        "max_turns": 80,
+        "source": "eval_config.yaml",
+        "overrides": {}
+      }
+    },
+    "v1-B": {
+      "n": 37,
+      "resolved": 8,
+      "grades_file": "runs/ab1/v1-B/grades.jsonl",
+      "grades_conditions": {
+        "run_env_fixes": true,
+        "grader": "harness.grader --predictions (repo fixes on by default)",
+        "rows_with_env_fixes_field": 37,
+        "image_id": "sha256:cb910bcefe56"
+      },
+      "mean_agent_min_per_task": 4.68,
+      "time_cap_endings": 30,
+      "context_window_exceeded_deaths": 0,
+      "context_window_exceeded_in_llm_call_errors": 0,
+      "write_file_errors": {
+        "total": 14,
+        "tmp_paths": 14
+      },
+      "empty_patches": 21,
+      "compactions": {
+        "total": 18,
+        "task_runs_with_ge1": 15
+      },
+      "budgets": {
+        "timeout_seconds": 120,
+        "verification_timeout_seconds": 300,
+        "max_tool_calls": 50,
+        "max_time_minutes": 5.0,
+        "max_turns": 80,
+        "source": "eval_config.yaml",
+        "overrides": {}
+      }
+    }
+  },
+  "compaction_latency": {
+    "source": "llm_calls.jsonl entries with kind=summarizer, latency_s (completed calls only; compactions.jsonl has window timestamps, not call latency)",
+    "baseline-v0-A": {
+      "n": 32,
+      "mean_s": 29.5,
+      "median_s": 29.0,
+      "errored_or_cancelled": 3
+    },
+    "baseline-v0-B": {
+      "n": 30,
+      "mean_s": 30.1,
+      "median_s": 28.6,
+      "errored_or_cancelled": 2
+    },
+    "v1-A": {
+      "n": 30,
+      "mean_s": 29.5,
+      "median_s": 28.2,
+      "errored_or_cancelled": 4
+    },
+    "v1-B": {
+      "n": 18,
+      "mean_s": 28.7,
+      "median_s": 27.7,
+      "errored_or_cancelled": 4
+    },
+    "pooled": {
+      "n": 110,
+      "mean_s": 29.5,
+      "median_s": 28.4
+    }
+  },
+  "notes": [
+    "context_window_exceeded_deaths = result.json agent_error contains ContextWindowExceeded",
+    "write_file errors = write_file tool results with status=error, rebuilt from llm_calls.jsonl; tmp_paths = filepath under /tmp",
+    "compactions counted from compactions.jsonl lines (the official trace records none)"
+  ],
+  "export": {
+    "host": "home RTX 3090 PC, WSL2 Ubuntu 24.04 (runs, logs and the aggregation script live there)",
+    "source": "runs/audit/release-gaps/ab1_per_pass.json",
+    "refreshed_at_commit": "e2efac2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "host": "Docker on WSL2, native x86_64",
+  "date": "2026-11-02",
+  "harness_rev": "bf17e62",
+  "image_id": "not recorded (built from harness/sandbox at that rev)",
+  "source": "runs/audit/empty-all",
+  "refreshed_at_commit": "e2efac2",
+  "harness_dirty": null,
+  "repairs": "on",
+  "network": "none",
+  "image": "swebench-sandbox:latest",
+  "image_arch": "amd64",
+  "workers": 6,
+  "result": "RESOLVED 2/129 mode=empty",
+  "sanitized": "grades: verdict fields only (no logs); summary: paths reduced to file names"
+}

@@ -1,0 +1,1334 @@
+[
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_11194",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_11355",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_13207",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_13537",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_13713",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_13786",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14419",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14458",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14479",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14482",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14485",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "collection_or_usage_error",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14609",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "collection_or_usage_error",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14616",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14786",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14791",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_14964",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_15023",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_15589",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "fastapi_5077",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "httpx_3672",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "requests_7205",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "requests_7309",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "requests_7427",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3006",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3052",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3064",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3130",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3278",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3521",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3535",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3675",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3772",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "timeout",
+  "shipped_error": "timeout"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3894",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3934",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3938",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3944",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-A",
+  "instance_id": "rich_3953",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_11194",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_11355",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_13207",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_13537",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_13713",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_13786",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14419",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14458",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14479",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14482",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14485",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "collection_or_usage_error",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14609",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "collection_or_usage_error",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14616",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14786",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14791",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_14964",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_15023",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_15589",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "fastapi_5077",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "httpx_3672",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "requests_7205",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "requests_7309",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "requests_7427",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3006",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3052",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3064",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3130",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3278",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3521",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3535",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3675",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3772",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "timeout",
+  "shipped_error": "timeout"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3894",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3934",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3938",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3944",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/baseline-v0-B",
+  "instance_id": "rich_3953",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_11194",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_11355",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_13207",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_13537",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_13713",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_13786",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14419",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14458",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14479",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14482",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14485",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14609",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "collection_or_usage_error",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14616",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14786",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14791",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_14964",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_15023",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_15589",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "fastapi_5077",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "httpx_3672",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "requests_7205",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "requests_7309",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "requests_7427",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3006",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3052",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3064",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3130",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3278",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3521",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3535",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3675",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3772",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "timeout",
+  "shipped_error": "timeout"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3894",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3934",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3938",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3944",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-A",
+  "instance_id": "rich_3953",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_11194",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_11355",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_13207",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_13537",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_13713",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_13786",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14419",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14458",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14479",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14482",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14485",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14609",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14616",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14786",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14791",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_14964",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_15023",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_15589",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "fastapi_5077",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "httpx_3672",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "collection_or_usage_error"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "requests_7205",
+  "repaired_env": true,
+  "shipped_env": false,
+  "discordant": true,
+  "repaired_error": "none",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "requests_7309",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "requests_7427",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3006",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3052",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3064",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3130",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3278",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3521",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3535",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3675",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3772",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3894",
+  "repaired_env": true,
+  "shipped_env": true,
+  "discordant": false,
+  "repaired_error": "none",
+  "shipped_error": "none"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3934",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3938",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3944",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "empty_patch",
+  "shipped_error": "empty_patch"
+ },
+ {
+  "run": "ab1/v1-B",
+  "instance_id": "rich_3953",
+  "repaired_env": false,
+  "shipped_env": false,
+  "discordant": false,
+  "repaired_error": "tests_failed",
+  "shipped_error": "tests_failed"
+ }
+]

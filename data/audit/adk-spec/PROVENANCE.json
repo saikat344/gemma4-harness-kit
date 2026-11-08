@@ -1,0 +1,14 @@
+{
+  "host": "macOS arm64, CPU only (no Docker, no GPU, no network)",
+  "date": "2026-11-06 (hand-off tests h01-h07 added; compaction tests unchanged since 2026-11-03)",
+  "harness_rev": "see git log for harness/adk_spec/test_handoff_spec.py",
+  "command": "python3 harness/adk_spec/run_matrix.py <venv-1.36.1> <venv-2.2.0> <venv-2.13.0> <venv-main>",
+  "versions": {
+    "adk-1.36.1": "google-adk 1.36.1, google-genai 2.11.0, litellm 1.83.7 (the scorer's pins)",
+    "adk-2.2.0": "google-adk 2.2.0 (first release with bdb5582), google-genai 2.34.0, litellm 1.83.7",
+    "adk-2.13.0": "google-adk 2.13.0 (latest release on 2026-11-03), google-genai 2.34.0, litellm 1.83.7",
+    "adk-main": "google/adk-python main at 1c84bb95 (2026-11-03; reports version 2.13.0), google-genai 2.34.0, litellm 1.83.7"
+  },
+  "model": "scripted BaseLlm (or LiteLlm with a fake client): the ADK code path is real, the model is not",
+  "result": "35/35 pass on 1.36.1 (28 compaction, 7 hand-off); a FAIL elsewhere marks a behaviour upstream changed"
+}

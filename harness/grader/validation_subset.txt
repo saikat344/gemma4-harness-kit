@@ -1,0 +1,21 @@
+# Mac validation subset (20 tasks, 2.2 GB): all 4 repos, smallest snapshots (+ rich_2725, older).
+httpx_3672
+requests_6589
+requests_6592
+requests_6629
+requests_6644
+requests_6757
+rich_2725
+rich_3006
+rich_3043
+rich_3061
+rich_3063
+rich_3064
+rich_3067
+rich_3130
+fastapi_9425
+fastapi_11194
+fastapi_12942
+fastapi_13713
+fastapi_14077
+fastapi_14099

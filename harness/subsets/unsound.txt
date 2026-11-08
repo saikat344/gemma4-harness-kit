@@ -1,0 +1,20 @@
+# unsound: public tasks whose gold patch fails or whose empty patch passes in our grader
+# (swebench-sandbox:latest, env fixes on, --network none; Docker on WSL2, native x86_64, 6 workers; 2026-11-02).
+# Exclude these from agent comparisons: they cannot separate agents in this environment. Details: docs/grader.md.
+fastapi_14077  # empty patch passes (required checks already pass at base commit)
+fastapi_14851  # empty patch passes (required checks already pass at base commit)
+fastapi_14186  # gold: required test_model_description_escaped_with_formfeed is skipped in our env (env/dependency, inferred)
+fastapi_14356  # gold: httpbin pulls brotlicffi, httpx then sends Accept-Encoding br, header-model tests fail (our image addition; fixable)
+fastapi_15745  # gold: async tests need the anyio plugin but the scorer forces -p no:anyio (harness flag)
+fastapi_15763  # gold: async tests need the anyio plugin but the scorer forces -p no:anyio (harness flag)
+fastapi_15785  # gold: async tests need the anyio plugin but the scorer forces -p no:anyio (harness flag)
+requests_6589  # gold: TestTimeout connect tests get ENETUNREACH under --network none (network)
+requests_6592  # gold: TestTimeout connect tests get ENETUNREACH under --network none (network)
+requests_6629  # gold: TestTimeout connect tests get ENETUNREACH under --network none (network)
+requests_6757  # gold: TestTimeout (network) plus 2 mTLS tests with expired/strict-invalid repo certs (Python 3.13)
+requests_7328  # gold: TestTimeout connect tests get ENETUNREACH under --network none (network)
+requests_7433  # gold: TestTimeout connect tests get ENETUNREACH under --network none (network)
+requests_7502  # gold: TestTimeout connect tests get ENETUNREACH under --network none (network)
+requests_7505  # gold: TestTimeout connect tests get ENETUNREACH under --network none (network)
+rich_3472      # gold: test_attrs_broken_310 expects the pre-3.13 AttributeError message (Python 3.13 adds the qualname)
+rich_3486      # gold: required test_traceback_finely_grained_missing is skipif Python >= 3.11 (Python version)

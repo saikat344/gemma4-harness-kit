@@ -1,0 +1,55 @@
+{
+  "mode": "gold",
+  "image": "swebench-sandbox:latest",
+  "image_arch": "amd64",
+  "network": "none",
+  "tasks_path": "tasks.jsonl",
+  "predictions": null,
+  "env_fixes": true,
+  "skipped_missing_snapshot": 0,
+  "wall_seconds": 586.6,
+  "workers": 6,
+  "total": 129,
+  "resolved": 114,
+  "resolution_rate": 0.8837,
+  "by_repo": {
+    "fastapi": {
+      "total": 67,
+      "resolved": 62
+    },
+    "httpx": {
+      "total": 1,
+      "resolved": 1
+    },
+    "requests": {
+      "total": 13,
+      "resolved": 5
+    },
+    "rich": {
+      "total": 48,
+      "resolved": 46
+    }
+  },
+  "error_classes": {
+    "none": 114,
+    "tests_failed": 13,
+    "required_test_not_passed": 2
+  },
+  "failed_ids": [
+    "fastapi_14186",
+    "fastapi_14356",
+    "fastapi_15745",
+    "fastapi_15763",
+    "fastapi_15785",
+    "requests_6589",
+    "requests_6592",
+    "requests_6629",
+    "requests_6757",
+    "requests_7328",
+    "requests_7433",
+    "requests_7502",
+    "requests_7505",
+    "rich_3472",
+    "rich_3486"
+  ]
+}

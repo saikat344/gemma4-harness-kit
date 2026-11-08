@@ -1,0 +1,31 @@
+{
+  "host": "Docker on WSL2, native x86_64",
+  "source": "{r2}/cross-grading/discordance.json",
+  "refreshed_at_commit": "e2efac2",
+  "date": "2026-11-03",
+  "rows": 148,
+  "summary": {
+    "ab1/baseline-v0-A": {
+      "n": 37,
+      "fixed_resolved": 11,
+      "shipped_resolved": 4
+    },
+    "ab1/baseline-v0-B": {
+      "n": 37,
+      "fixed_resolved": 13,
+      "shipped_resolved": 4
+    },
+    "ab1/v1-A": {
+      "n": 37,
+      "fixed_resolved": 9,
+      "shipped_resolved": 4
+    },
+    "ab1/v1-B": {
+      "n": 37,
+      "fixed_resolved": 8,
+      "shipped_resolved": 4
+    }
+  },
+  "harness_rev": "see the graded runs' summary.json",
+  "sanitized": "filtered to the ab1 runs; kept verdict fields ['discordant', 'instance_id', 'repaired_env', 'repaired_error', 'run', 'shipped_env', 'shipped_error']; dropped []"
+}

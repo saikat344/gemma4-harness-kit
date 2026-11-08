@@ -1,0 +1,37 @@
+| test | 1.36.1 (adk-1.36.1) | 2.2.0 (adk-2.2.0) | 2.13.0 (adk-2.13.0) | main 1c84bb95 (adk-main) |
+|---|---|---|---|---|
+| `test_h01_transfer_other_agents_calls_become_user_text` | pass | pass | pass | pass |
+| `test_h02_transfer_tool_results_survive_as_text` | pass | pass | pass | pass |
+| `test_h03_transfer_other_agents_thinking_dropped` | pass | pass | pass | pass |
+| `test_h04_transfer_back_rewrites_the_sub_agents_turns_too` | pass | pass | pass | pass |
+| `test_h05_agent_tool_sees_only_the_request_string` | pass | pass | pass | pass |
+| `test_h06_agent_tool_instruction_templates_session_state` | pass | pass | pass | pass |
+| `test_h07_transfer_wording_is_python_repr_lines` | pass | pass | FAIL | FAIL |
+| `test_k01_summarizer_inherits_agent_thinking_args` | pass | pass | pass | pass |
+| `test_k02_summarizer_ignores_agent_generation_config` | pass | pass | pass | pass |
+| `test_k03_summarizer_cached_on_shared_config` | pass | pass | pass | pass |
+| `test_k04_litellm_sends_past_thoughts_as_reasoning_content` | pass | pass | pass | pass |
+| `test_l01_large_tool_result_not_counted_before_next_call` | pass | pass | pass | FAIL |
+| `test_o01_orphan_call_blocks_all_later_compactions` | pass | pass | FAIL | FAIL |
+| `test_r01_summary_reinjected_as_user_for_context` | pass | pass | FAIL | FAIL |
+| `test_r02_summarizer_thinking_hidden_from_agent` | pass | pass | FAIL | FAIL |
+| `test_r03_task_message_gone_after_compaction` | pass | pass | pass | pass |
+| `test_r04_last_tool_turn_kept_verbatim_older_ones_dropped` | pass | pass | pass | pass |
+| `test_r05_system_instruction_survives` | pass | pass | pass | pass |
+| `test_r06_only_latest_summary_shown` | pass | pass | pass | pass |
+| `test_s01_task_text_reaches_summarizer` | pass | pass | pass | pass |
+| `test_s02_agent_thoughts_reach_summarizer` | pass | pass | pass | pass |
+| `test_s03_thoughts_are_unlabeled` | pass | FAIL | FAIL | FAIL |
+| `test_s04_tool_call_args_never_reach_summarizer` | pass | FAIL | FAIL | FAIL |
+| `test_s05_tool_results_never_reach_summarizer` | pass | FAIL | FAIL | FAIL |
+| `test_s06_history_joined_by_literal_backslash_n` | pass | FAIL | FAIL | FAIL |
+| `test_s07_seed_carries_previous_summary` | pass | pass | pass | pass |
+| `test_s08_seed_carries_previous_summarizer_thinking` | pass | pass | pass | pass |
+| `test_s09_summarizer_request_has_no_tools_or_system_instruction` | pass | pass | pass | pass |
+| `test_s10_summarizer_request_is_one_user_message` | pass | pass | pass | pass |
+| `test_s11_summarizer_runs_on_the_agents_own_model_object` | pass | pass | pass | pass |
+| `test_s12_default_prompt_wording` | pass | FAIL | FAIL | FAIL |
+| `test_t01_compacts_before_the_call_after_threshold_is_crossed` | pass | pass | pass | pass |
+| `test_v01_compaction_events_are_not_yielded` | pass | pass | pass | pass |
+| `test_v02_plugin_on_event_never_sees_compaction` | pass | pass | pass | pass |
+| `test_v03_session_holds_the_compaction_events` | pass | pass | pass | pass |

@@ -1,0 +1,17 @@
+# Competition data, harness wheels and model weights are downloaded, never committed (docs/data.md)
+/data/kaggle/
+/data/wheelhouse/
+/data/community/
+/data/venvs/
+/data/src/
+*.safetensors
+*.gguf
+# Run outputs (llm_calls.jsonl holds full prompts and task text: do not publish runs of private tasks)
+/runs/
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.env
+.DS_Store

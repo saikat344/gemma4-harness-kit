@@ -1,0 +1,16 @@
+{
+  "host": "Docker on WSL2, native x86_64",
+  "source": "{r2}/shipped-env/gold-all",
+  "refreshed_at_commit": "e2efac2",
+  "harness_rev": "bae126fb4c1c3471bdbf65c1a3b890611aa16ca4",
+  "harness_dirty": false,
+  "image_id": "sha256:16af393f1f45936b4478df3b20f73f0bb7b919784f2a4b82f1dddfed7c09feb7",
+  "date": "2026-11-03",
+  "repairs": "off",
+  "network": "none",
+  "image": "swebench-sandbox:official",
+  "image_arch": "amd64",
+  "workers": 2,
+  "result": "RESOLVED 43/129 mode=gold",
+  "sanitized": "grades: verdict fields only (no logs); summary: paths reduced to file names"
+}

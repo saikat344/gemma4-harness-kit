@@ -1,0 +1,73 @@
+{
+  "provenance": "source: <pc logs>/health-{e1,d2,modal}.log (harness.serve.health_check output) and <pc logs>/vllm-step-{e1,d2}.log (vLLM non-default args); host the home PC (WSL Ubuntu-24.04 on the home PC); 2026-11-02; built 2026-11-04T23:54:53-08:00",
+  "runs": {
+    "3090_profile3090_mode0_fulldecode (the 34.6 tok/s run)": {
+      "date": "2026-11-02 18:23 PST",
+      "gpu": "RTX 3090 24GB, WSL2",
+      "config": "serve.py --profile 3090 --gpu-memory-utilization 0.945, --max-num-batched-tokens 512 --max-num-seqs 1, --compilation-config mode 0 + FULL_DECODE_ONLY [1]; bf16 KV, max-model-len 32768",
+      "flags_in_vllm_log": {
+        "enforce_eager": false,
+        "max_num_seqs': 1": true,
+        "'mode': <CompilationMode.NONE": true
+      },
+      "bench": {
+        "parallel": 1,
+        "per_request_tok_s": [
+          34.6
+        ],
+        "aggregate_tok_s": 34.6
+      },
+      "context_lines": [
+        "[PASS] max_model_len_32768: max_model_len=32768 (scorer 32768)",
+        "[PASS] long_context: {\"http\": 200, \"prompt_tokens\": 28263, \"seconds\": 40.7}"
+      ],
+      "verdict": "HEALTH OK"
+    },
+    "3090_enforce_eager (earlier variant, not used)": {
+      "date": "2026-11-02 15:31 PST",
+      "gpu": "RTX 3090 24GB, WSL2",
+      "config": "same argv with --enforce-eager instead of the compilation-config",
+      "flags_in_vllm_log": {
+        "enforce_eager": true,
+        "max_num_seqs': 1": true
+      },
+      "bench": {
+        "parallel": 2,
+        "per_request_tok_s": [
+          10.0,
+          4.9
+        ],
+        "aggregate_tok_s": 9.8
+      },
+      "context_lines": [
+        "[PASS] max_model_len_32768: max_model_len=32768 (scorer 32768)",
+        "[FAIL] long_context: HTTP 400: {\"error\":{\"message\":\"This model's maximum context length is 32768 tokens. However, you requested 512 output tokens and your prompt contains at least 32257 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (param"
+      ],
+      "verdict": "HEALTH FAILED"
+    },
+    "modal_a100_80gb (exact-flag server minus TP; context only)": {
+      "date": "2026-11-02 15:52 PST",
+      "gpu": "A100-80GB (Modal)",
+      "bench": {
+        "parallel": 4,
+        "per_request_tok_s": [
+          48.9,
+          48.4,
+          48.4,
+          48.3
+        ],
+        "aggregate_tok_s": 190.1
+      },
+      "context_lines": [
+        "[PASS] max_model_len_32768: max_model_len=32768 (scorer 32768)",
+        "[PASS] long_context: {\"http\": 200, \"prompt_tokens\": 28263, \"seconds\": 21.2}"
+      ],
+      "verdict": "HEALTH OK"
+    }
+  },
+  "export": {
+    "host": "home RTX 3090 PC, WSL2 Ubuntu 24.04 (runs, logs and the aggregation script live there)",
+    "source": "runs/audit/release-gaps/serving_health.json",
+    "refreshed_at_commit": "e2efac2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "host": "Docker Desktop on an M3 Mac, linux/amd64 emulation",
+  "date": "2026-11-02",
+  "harness_rev": "not recorded (grader added in c37f98f the same day)",
+  "image_id": "not recorded",
+  "source": "runs/validation-mac/gold-official",
+  "refreshed_at_commit": "e2efac2",
+  "harness_dirty": null,
+  "repairs": "off",
+  "network": "none",
+  "image": "swebench-sandbox:official",
+  "image_arch": "amd64",
+  "workers": 3,
+  "result": "RESOLVED 6/20 mode=gold",
+  "sanitized": "grades: verdict fields only (no logs); summary: paths reduced to file names"
+}

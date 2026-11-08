@@ -1,0 +1,176 @@
+{
+  "provenance": "source: <repo>/runs/{ab1/baseline-v0-A,ab1/baseline-v0-B,ab1/v1-A,ab1/v1-B,ab2/baseline-v0-A} (run.json, grades.jsonl, tasks/*/result.json); host the home PC (WSL Ubuntu-24.04 on the home PC); ab1 = Modal A100 endpoint 2026-11-02, ab2/baseline-v0-A = home 3090; built 2026-11-04T23:57:42-08:00",
+  "key": "patch_source|resolved|termination (termination: submitted / time_budget / other)",
+  "passes": {
+    "ab1/baseline-v0-A": {
+      "runner_git": "bf67d4fd91e2",
+      "env_fixes": true,
+      "budgets_minutes": 5.0,
+      "grades_file": "runs/ab1/baseline-v0-A/grades.jsonl"
+    },
+    "ab1/baseline-v0-B": {
+      "runner_git": "bf67d4fd91e2",
+      "env_fixes": true,
+      "budgets_minutes": 5.0,
+      "grades_file": "runs/ab1/baseline-v0-B/grades.jsonl"
+    },
+    "ab1/v1-A": {
+      "runner_git": "bf67d4fd91e2",
+      "env_fixes": true,
+      "budgets_minutes": 5.0,
+      "grades_file": "runs/ab1/v1-A/grades.jsonl"
+    },
+    "ab1/v1-B": {
+      "runner_git": "bf67d4fd91e2",
+      "env_fixes": true,
+      "budgets_minutes": 5.0,
+      "grades_file": "runs/ab1/v1-B/grades.jsonl"
+    },
+    "ab2/baseline-v0-A": {
+      "runner_git": "e76cf84111a6",
+      "env_fixes": true,
+      "budgets_minutes": 5.0,
+      "grades_file": "runs/ab2/baseline-v0-A/grades.jsonl"
+    }
+  },
+  "per_pass": {
+    "ab1/baseline-v0-A": {
+      "cube": {
+        "fallback_diff|resolved|other": 1,
+        "fallback_diff|resolved|time_budget": 4,
+        "fallback_diff|unresolved|time_budget": 13,
+        "none|unresolved|other": 2,
+        "none|unresolved|time_budget": 6,
+        "submit_patch|resolved|submitted": 5,
+        "submit_patch|resolved|time_budget": 1,
+        "submit_patch|unresolved|submitted": 5
+      },
+      "summary": {
+        "task_runs": 37,
+        "resolved": 11,
+        "resolved_from_fallback_diff": 5,
+        "resolved_at_time_budget": 5,
+        "time_budget_total": 24
+      }
+    },
+    "ab1/baseline-v0-B": {
+      "cube": {
+        "fallback_diff|resolved|time_budget": 4,
+        "fallback_diff|unresolved|other": 1,
+        "fallback_diff|unresolved|time_budget": 12,
+        "none|unresolved|other": 1,
+        "none|unresolved|time_budget": 3,
+        "submit_patch|resolved|submitted": 8,
+        "submit_patch|resolved|time_budget": 1,
+        "submit_patch|unresolved|submitted": 6,
+        "submit_patch|unresolved|time_budget": 1
+      },
+      "summary": {
+        "task_runs": 37,
+        "resolved": 13,
+        "resolved_from_fallback_diff": 4,
+        "resolved_at_time_budget": 5,
+        "time_budget_total": 21
+      }
+    },
+    "ab1/v1-A": {
+      "cube": {
+        "fallback_diff|resolved|time_budget": 2,
+        "fallback_diff|unresolved|time_budget": 13,
+        "none|unresolved|time_budget": 11,
+        "submit_patch|resolved|submitted": 6,
+        "submit_patch|resolved|time_budget": 1,
+        "submit_patch|unresolved|submitted": 3,
+        "submit_patch|unresolved|time_budget": 1
+      },
+      "summary": {
+        "task_runs": 37,
+        "resolved": 9,
+        "resolved_from_fallback_diff": 2,
+        "resolved_at_time_budget": 3,
+        "time_budget_total": 28
+      }
+    },
+    "ab1/v1-B": {
+      "cube": {
+        "fallback_diff|resolved|time_budget": 3,
+        "fallback_diff|unresolved|time_budget": 6,
+        "none|unresolved|time_budget": 21,
+        "submit_patch|resolved|submitted": 5,
+        "submit_patch|unresolved|submitted": 2
+      },
+      "summary": {
+        "task_runs": 37,
+        "resolved": 8,
+        "resolved_from_fallback_diff": 3,
+        "resolved_at_time_budget": 3,
+        "time_budget_total": 30
+      }
+    },
+    "ab2/baseline-v0-A": {
+      "cube": {
+        "fallback_diff|resolved|time_budget": 6,
+        "fallback_diff|unresolved|time_budget": 14,
+        "none|unresolved|other": 3,
+        "none|unresolved|time_budget": 5,
+        "submit_patch|resolved|submitted": 4,
+        "submit_patch|unresolved|submitted": 4,
+        "submit_patch|unresolved|time_budget": 1
+      },
+      "summary": {
+        "task_runs": 37,
+        "resolved": 10,
+        "resolved_from_fallback_diff": 6,
+        "resolved_at_time_budget": 6,
+        "time_budget_total": 26
+      }
+    }
+  },
+  "pooled_ab1_4_passes": {
+    "cube": {
+      "fallback_diff|resolved|other": 1,
+      "fallback_diff|resolved|time_budget": 13,
+      "fallback_diff|unresolved|other": 1,
+      "fallback_diff|unresolved|time_budget": 44,
+      "none|unresolved|other": 3,
+      "none|unresolved|time_budget": 41,
+      "submit_patch|resolved|submitted": 24,
+      "submit_patch|resolved|time_budget": 3,
+      "submit_patch|unresolved|submitted": 16,
+      "submit_patch|unresolved|time_budget": 2
+    },
+    "summary": {
+      "task_runs": 148,
+      "resolved": 41,
+      "resolved_from_fallback_diff": 14,
+      "resolved_at_time_budget": 16,
+      "time_budget_total": 103
+    }
+  },
+  "pooled_ab1_plus_ab2_baseline_v0_A_5_passes (paper §6: 51 resolved / 20 fallback / 22 at cap)": {
+    "cube": {
+      "fallback_diff|resolved|other": 1,
+      "fallback_diff|resolved|time_budget": 19,
+      "fallback_diff|unresolved|other": 1,
+      "fallback_diff|unresolved|time_budget": 58,
+      "none|unresolved|other": 6,
+      "none|unresolved|time_budget": 46,
+      "submit_patch|resolved|submitted": 28,
+      "submit_patch|resolved|time_budget": 3,
+      "submit_patch|unresolved|submitted": 20,
+      "submit_patch|unresolved|time_budget": 3
+    },
+    "summary": {
+      "task_runs": 185,
+      "resolved": 51,
+      "resolved_from_fallback_diff": 20,
+      "resolved_at_time_budget": 22,
+      "time_budget_total": 129
+    }
+  },
+  "export": {
+    "host": "home RTX 3090 PC, WSL2 Ubuntu 24.04 (runs, logs and the aggregation script live there)",
+    "source": "runs/audit/release-gaps/patch_source.json",
+    "refreshed_at_commit": "e2efac2"
+  }
+}

@@ -1,0 +1,27 @@
+# Stage "final" of the scorer-like sandbox image: our documented divergences (docs/grader.md).
+# compose_dockerfile.py puts this after stage "official", which it derives at build time from the competition's
+# docker/Dockerfile.public (your Kaggle download; not redistributed here). build.sh does both.
+#   1. test-only packages the public wheels/ lack (needed by gold patches of public tasks);
+#   2. override wheels in /opt/gemma4/wheels, applied per task by harness/common/envfix.py
+#      (task_env_fixes.json) after swegemma's wheel injection.
+
+FROM official AS final
+
+# (1) Test deps missing from the public wheels/ (pins: repo requirement files where they pin,
+#     else latest on 2026-11-02). See docs/grader.md "Divergences from the scorer" for which task needs what.
+#   typing-inspection: required by pydantic>=2.11 (wheels/ ships pydantic 2.13.4 without it)
+#   inline-snapshot, dirty-equals: fastapi requirements-tests.txt
+#   pytest-httpbin, httpbin, trustme: requests requirements-dev.txt
+#   attrs: rich dev-dependencies (attrs = "^21.4.0"; tests/test_pretty.py)
+#   python-multipart: fastapi [standard]/[all] extra (Form/File tests, e.g. fastapi_11194)
+ARG EXTRA_PKGS="typing-inspection==0.4.4 inline-snapshot==0.36.1 dirty-equals==0.9.0 pytest-httpbin==2.1.0 httpbin==0.10.4 trustme==1.2.1 attrs==21.4.0 python-multipart==0.0.33"
+RUN pip install --no-cache-dir ${EXTRA_PKGS} && pip freeze > /opt/gemma4-freeze.txt
+
+# (2) Per-task override wheels (installed only by task_env_fixes.json commands; no network at grading).
+ARG OVERRIDE_WHEELS="Pygments==2.15.1 Pygments==2.16.1 Pygments==2.17.2 Pygments==2.19.1 Pygments==2.19.2 ujson==5.11.0 orjson==3.11.3"
+RUN mkdir -p /opt/gemma4/wheels \
+    && for spec in ${OVERRIDE_WHEELS}; do pip download --no-cache-dir --no-deps --only-binary=:all: -d /opt/gemma4/wheels "$spec"; done \
+    && ls /opt/gemma4/wheels
+COPY gemma4_fixes/ /opt/gemma4/bin/
+
+LABEL org.gemma4.sandbox="scorer-like" org.gemma4.base="Dockerfile.public"

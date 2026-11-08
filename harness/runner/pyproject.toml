@@ -1,0 +1,53 @@
+# uv environment for the agent runner (harness/runner) and the serve helpers (harness/serve).
+# Not an installable package: run from the repo root with
+#   uv run --project harness/runner python -m harness.runner ...
+# The three Kaggle-authored wheels are not on PyPI. They are resolved from the wheelhouse
+# directory below (git-ignored; fetch with
+#   kaggle datasets download metric/gemma-4-developer-agent-wheelhouse -p data/wheelhouse --unzip).
+# vLLM is NOT installed here: it lives in its own venv on the GPU box (see docs/runner.md).
+[project]
+name = "gemma4-harness-runner"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  # official harness wheels (Kaggle wheelhouse; exact versions the scorer installs)
+  "swegemma==0.2.11",
+  "adk-submission[serving]==0.2.13",
+  "adk-eval-core==0.1.0",
+  "google-adk==1.36.1",
+  "google-genai==2.11.0",
+  "transformers==5.13.1",
+  "tokenizers==0.22.2",
+  "safetensors==0.8.0",
+  # supplied by the Kaggle image (pins from vllm 0.19.1 / google-adk 1.36.1 metadata)
+  "litellm>=1.83.7,<=1.83.14",
+  "openai>=2.0.0",
+  "torch==2.10.0",
+  "torchvision==0.25.0",
+  "docker>=7",
+  "pandas>=2",
+  "pyarrow",
+  "numpy>=2",
+  "networkx>=3",
+  "requests>=2.28",
+  "pyyaml>=6",
+  # tests
+  "pytest>=8",
+]
+
+[tool.uv]
+package = false
+find-links = ["../../data/wheelhouse"]
+
+# The runner never needs CUDA torch (swegemma only imports torchvision transitively).
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

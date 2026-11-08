@@ -1,0 +1,54 @@
+gemma4-harness-kit
+Copyright 2026 The gemma4-harness-kit authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+-------------------------------------------------------------------------------
+Third-party material included in this distribution
+-------------------------------------------------------------------------------
+
+1. google-adk 2.2.0 compaction serializer (vendored)
+   File: harness/analysis/adk220_format.py
+   `LlmEventSummarizer._format_events_for_prompt`, `_truncate` and `_MAX_TOOL_CONTENT_CHARS`
+   from google-adk 2.2.0, google/adk/apps/llm_event_summarizer.py (upstream commit bdb5582),
+   adapted to module-level functions. Copyright 2026 Google LLC. Licensed under the Apache
+   License, Version 2.0; the original header is kept in the file.
+
+2. Community soundness data and dependency pins (attribution, CC BY 4.0)
+   Dmitrii Gluzdov, "Gemma 4: Task Soundness, Serving and Evaluation"
+   https://www.kaggle.com/code/dmitriigluzdov/gemma-4-task-soundness-serving-and-evaluation
+   Data licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+   Used here: several per-task dependency pins in harness/sandbox/task_env_fixes.json
+   (Pygments versions for rich tasks; ujson/orjson for fastapi_14962 and fastapi_14964; each
+   entry says so in its "reason"), and the comparison in data/audit/gluzdov-overlap.md, which
+   is computed from the community task_soundness.csv. The CSV itself is not redistributed;
+   download it from the link above.
+
+-------------------------------------------------------------------------------
+Third-party material used but NOT included (fetch it yourself; see docs/data.md)
+-------------------------------------------------------------------------------
+
+3. Kaggle "Gemma 4 Developer Agent" competition harness wheels:
+   swegemma 0.2.11, adk-submission 0.2.13, adk-eval-core 0.1.0
+   (Kaggle dataset metric/gemma-4-developer-agent-wheelhouse). This kit imports and wraps them
+   (the grader calls swegemma's verify_task unmodified); it does not copy or modify their code.
+
+4. Competition data: tasks.jsonl, snapshots/, wheels/, sandbox/setup.py, and
+   docker/{Dockerfile.public, imp.py, telnetlib.py}, under the competition's rules.
+   harness/sandbox/compose_dockerfile.py reads your downloaded Dockerfile.public at build time
+   and only adds version pins; the file is not redistributed. The sandbox image you build
+   contains the competition's two Python shims:
+   - telnetlib.py is CPython's Lib/telnetlib.py (byte-identical to CPython 3.12's except that
+     the module's deprecation-warning line is commented out). Copyright Python Software
+     Foundation; licensed under the PSF License Agreement (Python-2.0),
+     https://docs.python.org/3/license.html. CPython removed the module in 3.13 (PEP 594).
+   - imp.py is a 26-line compatibility stub written for the competition (it provides
+     `imp.find_module` via importlib for flasgger); it is not CPython's imp module.
+   Neither shim is included in this distribution.
+
+5. Model weights (Gemma 4, under the Gemma terms of use) and vLLM 0.19.1 (Apache-2.0) are
+   downloaded separately and are not included, except that harness/repro/vllm_stub.py holds
+   small stand-ins for a few vLLM 0.19.1 names (Apache-2.0).
+
+6. Kaggle's official getting-started notebook: the driver constants and serving flags in
+   harness/runner/core.py and harness/serve/serve.py follow it.

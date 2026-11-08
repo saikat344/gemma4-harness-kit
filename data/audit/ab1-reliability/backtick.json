@@ -1,0 +1,14 @@
+{
+  "provenance": "source: ab1 baseline-v0 passes A and B (Modal A100, 2026-11-02; 74 task-runs); counted by the authors from the ab1 logs, script not released.",
+  "edit_file_calls": 134,
+  "edit_file_rejected": 10,
+  "edit_file_rejected_backtick_slip": 10,
+  "write_file_calls": 127,
+  "write_file_rejected": 0,
+  "slipped_key": "new_string (next key old_string), 10/10",
+  "first_emissions": 4,
+  "retries": 6,
+  "retries_byte_identical": 6,
+  "task_runs_with_slip": 3,
+  "agent_time_in_slipped_calls_pct": 0.38
+}

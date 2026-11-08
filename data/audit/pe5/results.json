@@ -1,0 +1,1827 @@
+{
+  "generated_at": "2026-11-03T19:07:07Z",
+  "validity_sample": {
+    "valid": 20,
+    "total": 20
+  },
+  "validity_all": {
+    "valid": 51,
+    "total": 51,
+    "invalid": {}
+  },
+  "n_samples": 20,
+  "fact_counts": {
+    "issue": 33,
+    "tool": 51
+  },
+  "est_prompt_tokens": {
+    "T": {
+      "mean": 3411,
+      "max": 5378,
+      "total": 68213
+    },
+    "Y": {
+      "mean": 7004,
+      "max": 9517,
+      "total": 140080
+    }
+  },
+  "arms": {
+    "T": {
+      "issue": {
+        "available": {
+          "x": 33,
+          "n": 33,
+          "pct": 100.0
+        },
+        "retained": {
+          "x": 55,
+          "n": 66,
+          "pct": 83.3
+        },
+        "retained_given_available": {
+          "x": 55,
+          "n": 66,
+          "pct": 83.3
+        },
+        "retained_unavailable": 0,
+        "retained_incl_reasoning": {
+          "x": 58,
+          "n": 66,
+          "pct": 87.9
+        }
+      },
+      "tool": {
+        "available": {
+          "x": 44,
+          "n": 51,
+          "pct": 86.3
+        },
+        "retained": {
+          "x": 66,
+          "n": 102,
+          "pct": 64.7
+        },
+        "retained_given_available": {
+          "x": 66,
+          "n": 88,
+          "pct": 75.0
+        },
+        "retained_unavailable": 0,
+        "retained_incl_reasoning": {
+          "x": 74,
+          "n": 102,
+          "pct": 72.5
+        }
+      },
+      "desc": "text-only serializer (google-adk 1.36.1, what the scorer runs)",
+      "calls": 40,
+      "prompt_tokens_mean": 3410.7,
+      "completion_tokens_mean": 722.8,
+      "latency_s_mean": 31.6,
+      "finish_reasons": {
+        "stop": 40
+      },
+      "history_chars_mean": 11250.1,
+      "est_prompt_tokens_mean": 3410.7
+    },
+    "Y": {
+      "issue": {
+        "available": {
+          "x": 33,
+          "n": 33,
+          "pct": 100.0
+        },
+        "retained": {
+          "x": 53,
+          "n": 66,
+          "pct": 80.3
+        },
+        "retained_given_available": {
+          "x": 53,
+          "n": 66,
+          "pct": 80.3
+        },
+        "retained_unavailable": 0,
+        "retained_incl_reasoning": {
+          "x": 54,
+          "n": 66,
+          "pct": 81.8
+        }
+      },
+      "tool": {
+        "available": {
+          "x": 51,
+          "n": 51,
+          "pct": 100.0
+        },
+        "retained": {
+          "x": 74,
+          "n": 102,
+          "pct": 72.5
+        },
+        "retained_given_available": {
+          "x": 74,
+          "n": 102,
+          "pct": 72.5
+        },
+        "retained_unavailable": 0,
+        "retained_incl_reasoning": {
+          "x": 81,
+          "n": 102,
+          "pct": 79.4
+        }
+      },
+      "desc": "typed serializer (google-adk 2.2.0, thoughts + tool calls + truncated tool responses)",
+      "calls": 40,
+      "prompt_tokens_mean": 7063.8,
+      "completion_tokens_mean": 606.8,
+      "latency_s_mean": 29.7,
+      "finish_reasons": {
+        "stop": 40
+      },
+      "history_chars_mean": 23435.7,
+      "est_prompt_tokens_mean": 7004.0
+    },
+    "T_logged_ab1": {
+      "issue": {
+        "available": {
+          "x": 33,
+          "n": 33,
+          "pct": 100.0
+        },
+        "retained": {
+          "x": 28,
+          "n": 33,
+          "pct": 84.8
+        },
+        "retained_given_available": {
+          "x": 28,
+          "n": 33,
+          "pct": 84.8
+        },
+        "retained_unavailable": 0,
+        "retained_incl_reasoning": {
+          "x": 29,
+          "n": 33,
+          "pct": 87.9
+        }
+      },
+      "tool": {
+        "available": {
+          "x": 44,
+          "n": 51,
+          "pct": 86.3
+        },
+        "retained": {
+          "x": 32,
+          "n": 51,
+          "pct": 62.7
+        },
+        "retained_given_available": {
+          "x": 32,
+          "n": 44,
+          "pct": 72.7
+        },
+        "retained_unavailable": 0,
+        "retained_incl_reasoning": {
+          "x": 35,
+          "n": 51,
+          "pct": 68.6
+        }
+      },
+      "desc": "arm T as logged in ab1 (A100, scorer flags, 1 sample/window)",
+      "calls": 20,
+      "prompt_tokens_mean": 3410.7,
+      "completion_tokens_mean": 731.2,
+      "latency_s_mean": 28.5
+    }
+  },
+  "per_sample": {
+    "fastapi_11355@baseline-v0-A": {
+      "issue_facts": [],
+      "tool_facts": [
+        "fastapi/routing.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/_compat/main.py",
+        "fastapi/_compat/v2.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "fastapi/routing.py",
+            "fastapi/dependencies/utils.py",
+            "fastapi/_compat/main.py",
+            "fastapi/_compat/v2.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "fastapi/dependencies/utils.py",
+              "fastapi/_compat/v2.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          2906,
+          2906
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "fastapi/routing.py",
+            "fastapi/dependencies/utils.py",
+            "fastapi/_compat/main.py",
+            "fastapi/_compat/v2.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "fastapi/dependencies/utils.py",
+              "fastapi/_compat/main.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "fastapi/dependencies/utils.py",
+              "fastapi/_compat/main.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          6760,
+          6760
+        ]
+      }
+    },
+    "fastapi_13207@baseline-v0-B": {
+      "issue_facts": [
+        "separate_input_output_schemas=False",
+        "OpenAPI"
+      ],
+      "tool_facts": [
+        "fastapi/openapi/utils.py",
+        "fastapi/_compat/v2.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "separate_input_output_schemas=False",
+            "OpenAPI"
+          ],
+          "tool": [
+            "fastapi/openapi/utils.py",
+            "fastapi/_compat/v2.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "separate_input_output_schemas=False",
+              "OpenAPI"
+            ],
+            "tool": [
+              "fastapi/_compat/v2.py"
+            ]
+          },
+          {
+            "issue": [
+              "separate_input_output_schemas=False",
+              "OpenAPI"
+            ],
+            "tool": [
+              "fastapi/_compat/v2.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          2910,
+          2910
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "separate_input_output_schemas=False",
+            "OpenAPI"
+          ],
+          "tool": [
+            "fastapi/openapi/utils.py",
+            "fastapi/_compat/v2.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "separate_input_output_schemas=False",
+              "OpenAPI"
+            ],
+            "tool": [
+              "fastapi/openapi/utils.py",
+              "fastapi/_compat/v2.py"
+            ]
+          },
+          {
+            "issue": [
+              "separate_input_output_schemas=False",
+              "OpenAPI"
+            ],
+            "tool": [
+              "fastapi/openapi/utils.py",
+              "fastapi/_compat/v2.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          6492,
+          6492
+        ]
+      }
+    },
+    "fastapi_13537@baseline-v0-B": {
+      "issue_facts": [
+        "_get_multidict_value",
+        "_extract_form_body",
+        "request_params_to_args"
+      ],
+      "tool_facts": [
+        "fastapi/dependencies/utils.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "_get_multidict_value",
+            "_extract_form_body",
+            "request_params_to_args"
+          ],
+          "tool": [
+            "fastapi/dependencies/utils.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "_get_multidict_value",
+              "_extract_form_body",
+              "request_params_to_args"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "_get_multidict_value",
+              "_extract_form_body"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          4481,
+          4481
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "_get_multidict_value",
+            "_extract_form_body",
+            "request_params_to_args"
+          ],
+          "tool": [
+            "fastapi/dependencies/utils.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "_get_multidict_value",
+              "_extract_form_body",
+              "request_params_to_args"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "_get_multidict_value",
+              "_extract_form_body"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          7473,
+          7473
+        ]
+      }
+    },
+    "fastapi_13713@baseline-v0-B": {
+      "issue_facts": [
+        "external_docs",
+        "OpenAPI"
+      ],
+      "tool_facts": [
+        "fastapi/applications.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "external_docs",
+            "OpenAPI"
+          ],
+          "tool": [
+            "fastapi/applications.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "external_docs",
+              "OpenAPI"
+            ],
+            "tool": [
+              "fastapi/applications.py"
+            ]
+          },
+          {
+            "issue": [
+              "external_docs",
+              "OpenAPI"
+            ],
+            "tool": [
+              "fastapi/applications.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          2006,
+          2006
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "external_docs",
+            "OpenAPI"
+          ],
+          "tool": [
+            "fastapi/applications.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "external_docs",
+              "OpenAPI"
+            ],
+            "tool": [
+              "fastapi/applications.py"
+            ]
+          },
+          {
+            "issue": [
+              "external_docs",
+              "OpenAPI"
+            ],
+            "tool": [
+              "fastapi/applications.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          5158,
+          5158
+        ]
+      }
+    },
+    "fastapi_14485@baseline-v0-B": {
+      "issue_facts": [
+        "if TYPE_CHECKING"
+      ],
+      "tool_facts": [
+        "fastapi/utils.py",
+        "fastapi/params.py",
+        "fastapi/routing.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "if TYPE_CHECKING"
+          ],
+          "tool": [
+            "fastapi/utils.py",
+            "fastapi/params.py",
+            "fastapi/routing.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "if TYPE_CHECKING"
+            ],
+            "tool": [
+              "fastapi/utils.py",
+              "fastapi/params.py",
+              "fastapi/routing.py"
+            ]
+          },
+          {
+            "issue": [
+              "if TYPE_CHECKING"
+            ],
+            "tool": [
+              "fastapi/utils.py",
+              "fastapi/params.py",
+              "fastapi/routing.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          2858,
+          2858
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "if TYPE_CHECKING"
+          ],
+          "tool": [
+            "fastapi/utils.py",
+            "fastapi/params.py",
+            "fastapi/routing.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "if TYPE_CHECKING"
+            ],
+            "tool": [
+              "fastapi/utils.py",
+              "fastapi/params.py",
+              "fastapi/routing.py"
+            ]
+          },
+          {
+            "issue": [
+              "if TYPE_CHECKING"
+            ],
+            "tool": [
+              "fastapi/utils.py",
+              "fastapi/params.py",
+              "fastapi/routing.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          6334,
+          6334
+        ]
+      }
+    },
+    "fastapi_14616@baseline-v0-B": {
+      "issue_facts": [
+        "Json[list[str]]",
+        "Json[T]",
+        "Form()",
+        "getlist()",
+        "metadata"
+      ],
+      "tool_facts": [
+        "AssertionError",
+        "fastapi/dependencies/utils.py",
+        "fastapi/_compat/v2.py",
+        "repro.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "Json[list[str]]",
+            "Json[T]",
+            "Form()",
+            "getlist()",
+            "metadata"
+          ],
+          "tool": [
+            "fastapi/dependencies/utils.py",
+            "fastapi/_compat/v2.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "Json[list[str]]",
+              "Json[T]",
+              "Form()",
+              "getlist()",
+              "metadata"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "Json[list[str]]",
+              "Json[T]",
+              "Form()",
+              "getlist()",
+              "metadata"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          3334,
+          3334
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "Json[list[str]]",
+            "Json[T]",
+            "Form()",
+            "getlist()",
+            "metadata"
+          ],
+          "tool": [
+            "AssertionError",
+            "fastapi/dependencies/utils.py",
+            "fastapi/_compat/v2.py",
+            "repro.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "Json[list[str]]",
+              "Json[T]",
+              "Form()",
+              "getlist()",
+              "metadata"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py",
+              "repro.py"
+            ]
+          },
+          {
+            "issue": [
+              "Json[list[str]]",
+              "Json[T]",
+              "Form()",
+              "getlist()",
+              "metadata"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          7724,
+          7724
+        ]
+      }
+    },
+    "fastapi_14791@baseline-v0-A": {
+      "issue_facts": [
+        "ValidationError",
+        "validation_error_definition",
+        "fastapi/openapi/utils.py"
+      ],
+      "tool_facts": [
+        "fastapi/openapi/utils.py",
+        "tests/test_openapi_separate_input_output_schemas.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "ValidationError",
+            "validation_error_definition",
+            "fastapi/openapi/utils.py"
+          ],
+          "tool": [
+            "fastapi/openapi/utils.py",
+            "tests/test_openapi_separate_input_output_schemas.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "ValidationError",
+              "validation_error_definition",
+              "fastapi/openapi/utils.py"
+            ],
+            "tool": [
+              "fastapi/openapi/utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "ValidationError",
+              "validation_error_definition",
+              "fastapi/openapi/utils.py"
+            ],
+            "tool": [
+              "fastapi/openapi/utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          5378,
+          5378
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "ValidationError",
+            "validation_error_definition",
+            "fastapi/openapi/utils.py"
+          ],
+          "tool": [
+            "fastapi/openapi/utils.py",
+            "tests/test_openapi_separate_input_output_schemas.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "ValidationError",
+              "validation_error_definition",
+              "fastapi/openapi/utils.py"
+            ],
+            "tool": [
+              "fastapi/openapi/utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "ValidationError",
+              "validation_error_definition",
+              "fastapi/openapi/utils.py"
+            ],
+            "tool": [
+              "fastapi/openapi/utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          8839,
+          8839
+        ]
+      }
+    },
+    "fastapi_15023@baseline-v0-B": {
+      "issue_facts": [],
+      "tool_facts": [
+        "fastapi/responses.py",
+        "fastapi/routing.py",
+        "docs_src/stream_data/tutorial001_py310.py",
+        "docs_src/stream_json_lines/tutorial001_py310.py",
+        "docs_src/response_directly/tutorial001_py310.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "fastapi/responses.py",
+            "fastapi/routing.py",
+            "docs_src/stream_data/tutorial001_py310.py",
+            "docs_src/stream_json_lines/tutorial001_py310.py",
+            "docs_src/response_directly/tutorial001_py310.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "fastapi/routing.py",
+              "docs_src/stream_data/tutorial001_py310.py",
+              "docs_src/stream_json_lines/tutorial001_py310.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "fastapi/routing.py",
+              "docs_src/stream_data/tutorial001_py310.py",
+              "docs_src/stream_json_lines/tutorial001_py310.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          3715,
+          3715
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "fastapi/responses.py",
+            "fastapi/routing.py",
+            "docs_src/stream_data/tutorial001_py310.py",
+            "docs_src/stream_json_lines/tutorial001_py310.py",
+            "docs_src/response_directly/tutorial001_py310.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "fastapi/routing.py",
+              "docs_src/stream_data/tutorial001_py310.py",
+              "docs_src/stream_json_lines/tutorial001_py310.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "fastapi/routing.py",
+              "docs_src/stream_data/tutorial001_py310.py",
+              "docs_src/stream_json_lines/tutorial001_py310.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          9856,
+          9856
+        ]
+      }
+    },
+    "fastapi_5077@baseline-v0-A": {
+      "issue_facts": [
+        "@functools.wraps()",
+        "globalns",
+        "get_typed_signature",
+        "typing.get_type_hints",
+        "__annotations__"
+      ],
+      "tool_facts": [
+        "fastapi/dependencies/utils.py",
+        "repro.py",
+        "decorator.py",
+        "repro_main.py",
+        "fastapi/_compat/__init__.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "@functools.wraps()",
+            "globalns",
+            "get_typed_signature",
+            "typing.get_type_hints",
+            "__annotations__"
+          ],
+          "tool": [
+            "fastapi/dependencies/utils.py",
+            "repro.py",
+            "decorator.py",
+            "fastapi/_compat/__init__.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "@functools.wraps()",
+              "globalns",
+              "get_typed_signature",
+              "typing.get_type_hints",
+              "__annotations__"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py",
+              "repro.py",
+              "decorator.py"
+            ]
+          },
+          {
+            "issue": [
+              "@functools.wraps()",
+              "globalns",
+              "get_typed_signature",
+              "typing.get_type_hints"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          4714,
+          4714
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "@functools.wraps()",
+            "globalns",
+            "get_typed_signature",
+            "typing.get_type_hints",
+            "__annotations__"
+          ],
+          "tool": [
+            "fastapi/dependencies/utils.py",
+            "repro.py",
+            "decorator.py",
+            "repro_main.py",
+            "fastapi/_compat/__init__.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "@functools.wraps()",
+              "get_typed_signature",
+              "__annotations__"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "@functools.wraps()",
+              "get_typed_signature",
+              "typing.get_type_hints"
+            ],
+            "tool": [
+              "fastapi/dependencies/utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          8245,
+          8245
+        ]
+      }
+    },
+    "httpx_3672@baseline-v0-A": {
+      "issue_facts": [
+        "HTTPParser.keep_alive",
+        "HTTPParser.complete",
+        "reset",
+        "KeyboardException"
+      ],
+      "tool_facts": [
+        "src/httpx/_parsers.py",
+        "src/httpx/_server.py",
+        "src/httpx/_streams.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "HTTPParser.keep_alive",
+            "HTTPParser.complete",
+            "reset",
+            "KeyboardException"
+          ],
+          "tool": [
+            "src/httpx/_parsers.py",
+            "src/httpx/_server.py",
+            "src/httpx/_streams.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "HTTPParser.keep_alive",
+              "HTTPParser.complete",
+              "reset"
+            ],
+            "tool": [
+              "src/httpx/_parsers.py",
+              "src/httpx/_server.py",
+              "src/httpx/_streams.py"
+            ]
+          },
+          {
+            "issue": [
+              "reset",
+              "KeyboardException"
+            ],
+            "tool": [
+              "src/httpx/_parsers.py",
+              "src/httpx/_server.py",
+              "src/httpx/_streams.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          2019,
+          2019
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "HTTPParser.keep_alive",
+            "HTTPParser.complete",
+            "reset",
+            "KeyboardException"
+          ],
+          "tool": [
+            "src/httpx/_parsers.py",
+            "src/httpx/_server.py",
+            "src/httpx/_streams.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "HTTPParser.complete",
+              "reset",
+              "KeyboardException"
+            ],
+            "tool": [
+              "src/httpx/_parsers.py",
+              "src/httpx/_server.py",
+              "src/httpx/_streams.py"
+            ]
+          },
+          {
+            "issue": [
+              "reset",
+              "KeyboardException"
+            ],
+            "tool": [
+              "src/httpx/_parsers.py",
+              "src/httpx/_server.py",
+              "src/httpx/_streams.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          5157,
+          5157
+        ]
+      }
+    },
+    "requests_7309@baseline-v0-A": {
+      "issue_facts": [
+        "_parse_content_type_header"
+      ],
+      "tool_facts": [
+        "src/requests/utils.py",
+        "AssertionError",
+        "repro.py",
+        "tests/test_utils.py",
+        "test_crash.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "_parse_content_type_header"
+          ],
+          "tool": [
+            "src/requests/utils.py",
+            "tests/test_utils.py",
+            "test_crash.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "_parse_content_type_header"
+            ],
+            "tool": [
+              "src/requests/utils.py",
+              "tests/test_utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "_parse_content_type_header"
+            ],
+            "tool": [
+              "src/requests/utils.py",
+              "tests/test_utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          3701,
+          3701
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "_parse_content_type_header"
+          ],
+          "tool": [
+            "src/requests/utils.py",
+            "AssertionError",
+            "repro.py",
+            "tests/test_utils.py",
+            "test_crash.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "_parse_content_type_header"
+            ],
+            "tool": [
+              "src/requests/utils.py",
+              "repro.py",
+              "tests/test_utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "_parse_content_type_header"
+            ],
+            "tool": [
+              "src/requests/utils.py",
+              "repro.py",
+              "tests/test_utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          9213,
+          9213
+        ]
+      }
+    },
+    "requests_7427@baseline-v0-B": {
+      "issue_facts": [
+        "no_proxy",
+        "CPython"
+      ],
+      "tool_facts": [
+        "src/requests/utils.py",
+        "tests/test_utils.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "no_proxy",
+            "CPython"
+          ],
+          "tool": [
+            "src/requests/utils.py",
+            "tests/test_utils.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "no_proxy"
+            ],
+            "tool": [
+              "src/requests/utils.py",
+              "tests/test_utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "no_proxy"
+            ],
+            "tool": [
+              "src/requests/utils.py",
+              "tests/test_utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          3902,
+          3902
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "no_proxy",
+            "CPython"
+          ],
+          "tool": [
+            "src/requests/utils.py",
+            "tests/test_utils.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "no_proxy",
+              "CPython"
+            ],
+            "tool": [
+              "src/requests/utils.py",
+              "tests/test_utils.py"
+            ]
+          },
+          {
+            "issue": [
+              "no_proxy"
+            ],
+            "tool": [
+              "src/requests/utils.py",
+              "tests/test_utils.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          7997,
+          7997
+        ]
+      }
+    },
+    "rich_3064@baseline-v0-A": {
+      "issue_facts": [],
+      "tool_facts": [
+        "rich/markdown.py",
+        "repro.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/markdown.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/markdown.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/markdown.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          4677,
+          4677
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/markdown.py",
+            "repro.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/markdown.py",
+              "repro.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/markdown.py",
+              "repro.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          8089,
+          8089
+        ]
+      }
+    },
+    "rich_3130@baseline-v0-B": {
+      "issue_facts": [
+        "TextElement",
+        "on_text",
+        "CHANGELOG.md",
+        "CONTRIBUTORS.md"
+      ],
+      "tool_facts": [
+        "rich/markdown.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "TextElement",
+            "on_text",
+            "CHANGELOG.md",
+            "CONTRIBUTORS.md"
+          ],
+          "tool": [
+            "rich/markdown.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "TextElement",
+              "on_text"
+            ],
+            "tool": [
+              "rich/markdown.py"
+            ]
+          },
+          {
+            "issue": [
+              "TextElement",
+              "on_text"
+            ],
+            "tool": [
+              "rich/markdown.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          4089,
+          4089
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "TextElement",
+            "on_text",
+            "CHANGELOG.md",
+            "CONTRIBUTORS.md"
+          ],
+          "tool": [
+            "rich/markdown.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "TextElement",
+              "on_text"
+            ],
+            "tool": [
+              "rich/markdown.py"
+            ]
+          },
+          {
+            "issue": [
+              "TextElement",
+              "on_text"
+            ],
+            "tool": [
+              "rich/markdown.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          7683,
+          7683
+        ]
+      }
+    },
+    "rich_3521@baseline-v0-A": {
+      "issue_facts": [
+        "Segment.split_cells"
+      ],
+      "tool_facts": [
+        "rich/segment.py",
+        "tests/test_segment.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [
+            "Segment.split_cells"
+          ],
+          "tool": [
+            "rich/segment.py",
+            "tests/test_segment.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "Segment.split_cells"
+            ],
+            "tool": [
+              "rich/segment.py",
+              "tests/test_segment.py"
+            ]
+          },
+          {
+            "issue": [
+              "Segment.split_cells"
+            ],
+            "tool": [
+              "rich/segment.py",
+              "tests/test_segment.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          3275,
+          3275
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [
+            "Segment.split_cells"
+          ],
+          "tool": [
+            "rich/segment.py",
+            "tests/test_segment.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [
+              "Segment.split_cells"
+            ],
+            "tool": [
+              "rich/segment.py",
+              "tests/test_segment.py"
+            ]
+          },
+          {
+            "issue": [
+              "Segment.split_cells"
+            ],
+            "tool": [
+              "rich/segment.py",
+              "tests/test_segment.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          5947,
+          5947
+        ]
+      }
+    },
+    "rich_3535@baseline-v0-A": {
+      "issue_facts": [],
+      "tool_facts": [
+        "rich/cells.py",
+        "rich/_cell_widths.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/cells.py",
+            "rich/_cell_widths.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/cells.py",
+              "rich/_cell_widths.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/cells.py",
+              "rich/_cell_widths.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          2963,
+          2963
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/cells.py",
+            "rich/_cell_widths.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/cells.py",
+              "rich/_cell_widths.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/cells.py",
+              "rich/_cell_widths.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          5648,
+          5648
+        ]
+      }
+    },
+    "rich_3772@baseline-v0-B": {
+      "issue_facts": [],
+      "tool_facts": [
+        "rich/traceback.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/traceback.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/traceback.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/traceback.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          1791,
+          1791
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/traceback.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/traceback.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/traceback.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          3655,
+          3655
+        ]
+      }
+    },
+    "rich_3938@baseline-v0-B": {
+      "issue_facts": [],
+      "tool_facts": [
+        "repro.py",
+        "rich/console.py",
+        "rich/text.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/console.py",
+            "rich/text.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/console.py",
+              "rich/text.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/console.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          3591,
+          3591
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "repro.py",
+            "rich/console.py",
+            "rich/text.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/console.py",
+              "rich/text.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "repro.py",
+              "rich/console.py",
+              "rich/text.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          7671,
+          7671
+        ]
+      }
+    },
+    "rich_3944@baseline-v0-A": {
+      "issue_facts": [],
+      "tool_facts": [
+        "rich/_export_format.py",
+        "rich/console.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/_export_format.py",
+            "rich/console.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/_export_format.py",
+              "rich/console.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/_export_format.py",
+              "rich/console.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          3465,
+          3465
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/_export_format.py",
+            "rich/console.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/_export_format.py",
+              "rich/console.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/_export_format.py",
+              "rich/console.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          7986,
+          7986
+        ]
+      }
+    },
+    "rich_3953@baseline-v0-A": {
+      "issue_facts": [],
+      "tool_facts": [
+        "rich/console.py"
+      ],
+      "T": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/console.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/console.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/console.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          2438,
+          2438
+        ]
+      },
+      "Y": {
+        "available": {
+          "issue": [],
+          "tool": [
+            "rich/console.py"
+          ]
+        },
+        "retained": [
+          {
+            "issue": [],
+            "tool": [
+              "rich/console.py"
+            ]
+          },
+          {
+            "issue": [],
+            "tool": [
+              "rich/console.py"
+            ]
+          }
+        ],
+        "prompt_tokens": [
+          5348,
+          5348
+        ]
+      }
+    }
+  },
+  "exploratory_char_coverage": {
+    "label": "EXPLORATORY/descriptive, not a frozen P-E5 measure",
+    "method": "EXPLORATORY (not a frozen P-E5 measure): line-level character coverage of (a) every tool result string\n    (function_response values) and (b) edit_file old_string/new_string in the window. Text is reduced to\n    [0-9A-Za-z] (so repr escaping in arm Y does not matter); a line with >= 8 such chars is covered if it is a\n    substring of the arm's reduced summarizer input; shares are covered chars / all chars of counted lines.",
+    "T": {
+      "tool_results": {
+        "x": 18912,
+        "n": 237385,
+        "pct": 8.0
+      },
+      "edit_strings": {
+        "x": 1273,
+        "n": 1332,
+        "pct": 95.6
+      }
+    },
+    "Y": {
+      "tool_results": {
+        "x": 137069,
+        "n": 237385,
+        "pct": 57.7
+      },
+      "edit_strings": {
+        "x": 1332,
+        "n": 1332,
+        "pct": 100.0
+      }
+    }
+  }
+}

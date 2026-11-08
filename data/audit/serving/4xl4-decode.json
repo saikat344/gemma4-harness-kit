@@ -1,0 +1,35 @@
+{
+  "provenance": "source: decode-speed measurement by the authors on a rented 4x NVIDIA L4 host (TP=4), 2026-11-07, base model; server: vLLM 0.19.1 from the competition wheelhouse, the scorer's serve flags (--max-model-len 32768 --dtype bfloat16 --gpu-memory-utilization 0.9 --tensor-parallel-size 4, gemma4 tool and reasoning parsers, --no-scheduler-reserve-full-isl); single stream, 256 completion tokens, median of 2 reps.",
+  "kv_cache_tokens": 50416,
+  "model_load_gib": 5.96,
+  "rows": [
+    {
+      "ctx_target": 512,
+      "prompt_tokens": 576,
+      "reps": 2,
+      "decode_tok_s_median": 39.7,
+      "ttft_s_median": 0.07
+    },
+    {
+      "ctx_target": 8000,
+      "prompt_tokens": 9319,
+      "reps": 2,
+      "decode_tok_s_median": 36.22,
+      "ttft_s_median": 5.104
+    },
+    {
+      "ctx_target": 16000,
+      "prompt_tokens": 18898,
+      "reps": 2,
+      "decode_tok_s_median": 34.03,
+      "ttft_s_median": 5.977
+    },
+    {
+      "ctx_target": 24000,
+      "prompt_tokens": 28472,
+      "reps": 2,
+      "decode_tok_s_median": 32.31,
+      "ttft_s_median": 6.425
+    }
+  ]
+}
